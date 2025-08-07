@@ -95,7 +95,33 @@
                       </div>
                       <!-- 密碼 -->
                       <div class="mb-4">
-                        <button type="button" class="btn btn-outline-secondary border-dark-subtle rounded-4 text-black" style="height: 44px;">修改密碼<span class="material-icons-outlined align-text-bottom">keyboard_arrow_right</span></button>
+                        <button type="button" class="btn btn-outline-secondary border-dark-subtle rounded-4 text-black" style="height: 44px;" data-bs-toggle="modal" data-bs-target="#changePassword">修改密碼<span class="material-icons-outlined align-text-bottom">keyboard_arrow_right</span></button>
+
+                        <!-- 更新密碼彈跳視窗 -->
+                        <div class="modal fade" id="changePassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h2 class="modal-title fs-5" id="exampleModalLabel">更新密碼</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body p-4">                                
+                                <div class="form-floating">
+                                  <input type="password" class="form-control mb-4" id="phonenumber" placeholder="新密碼">
+                                  <label for="phonenumber">新密碼</label>
+                                </div>                                
+                                <div class="form-floating">
+                                  <input type="password" class="form-control" id="phonenumber" placeholder="再次密碼">
+                                  <label for="phonenumber">再次密碼</label>
+                                </div>                                
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn rounded-4 btn-dark me-2">更新密碼<span class="material-icons-outlined align-text-bottom">keyboard_arrow_right</span></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>                     
+
                       </div>
                       <!-- 信箱 -->
                       <div class="mb-4">
