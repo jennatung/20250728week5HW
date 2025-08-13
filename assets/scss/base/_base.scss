@@ -1,9 +1,13 @@
 /* 標籤的基本樣式 */
 body {
-  font-family: "Noto Sans TC", sans-serif;
-  line-height: 1.5;
+  //font-family: "Noto Sans TC", sans-serif;
+  //line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #141a1f;
+  //color: #141a1f;
+  padding-top: 74px;
+  @include mobile{
+    padding-top: 83px;    
+  }
 }
 
 img {
@@ -13,19 +17,30 @@ img {
 
 a {
   display: inline-block;
-  text-decoration: none;
+  //text-decoration: none;
   color: inherit;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 0;
+ul,li{
+  margin: 0;
+  padding: 0;
 }
 
-p {
-  margin-bottom: 0;
+li{
+  list-style-type:none;
 }
+
+
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   margin-bottom: 0;
+// }
+
+// p {
+//   margin-bottom: 0;
+// }

@@ -1,3 +1,68 @@
+@mixin mobile{
+  @media(min-width: 768px){
+    @content;
+  }
+}
+
 .index-title {
   font-size: 100px;
 }
+
+.logo-img {
+  width: 48px;
+  height: auto;
+  @include mobile{
+    width: 96px;
+    height: auto;
+  }
+}
+
+.swiper {
+  overflow: visible;
+  overflow-x: clip;
+}
+
+.section-background-lowerLeft{
+  background-size: contain; 
+  background-position-x: 180px;  
+  background-position-y: 80px;
+  @include mobile{
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 200px;      
+  }
+}
+
+//右上頂端position-absolute
+.decroSVG-OverTopRight{
+  display: none;
+  @include mobile{
+    display: block;
+    position: absolute;
+    top: -183px;
+    right:0;
+  }
+}
+
+//選擇職旅 WorkWay hover 顯示文字
+.card{
+  .work-way-card-hover{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    &:hover{
+      opacity: 100%;     
+      background-color: rgba($natural-10, 0.5);
+    }  
+  }
+}
+
+//服務流程-響應式md卡片
+@media (max-width: 768px){
+  .card-overflow-width{
+    width: 306px;
+  }
+}
+

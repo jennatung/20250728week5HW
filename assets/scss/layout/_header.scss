@@ -1,4 +1,34 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+
+
+// 登入註冊按鈕
+.login-avatar{
+  display: none;
 }
+// 登入註冊按鈕-登入-顯示會員帳號
+.successfully-login:checked + label .login-text {
+  display: none;
+}
+.successfully-login:checked + label .login-avatar {
+  display: block;
+}
+.successfully-login:checked + .btn-outline-natural-85 {
+  background-color: $white;
+  border: 0;
+}
+// 登入註冊按鈕-未登入
+.successfully-login:not(:checked) + label .login-text {
+  display: block;
+}
+.successfully-login:not(:checked) + label .login-avatar {
+  display: none;
+}
+
+// LOGO尺寸-img
+.nav-img{
+  width: 80%;
+  @include mobile{
+    width: 100%;
+  }
+}
+
+

@@ -1,16 +1,32 @@
-.bg-gray{
-    background-color: #F0F3F5;
-}
 
-.rounded-panel{
-    border-radius: 24px;
-    background-color: #FCFCFD;
-}
+
+// .rounded-panel{
+//     border-radius: 24px;
+//     background-color: #FCFCFD;
+// }
 
 .side-width{
-    width: 300px;
+    @include mobile{
+        width: 300px;        
+    }    
 }
 
 .side-leftwidth{
     width: 23%;;
+}
+
+.tab-btn-bg {
+    .nav-link{
+        background-color: $white;
+    }
+}
+
+
+.list-group-item{
+    &:nth-child(even){
+        background-color: $natural-90;
+    }
+    &:hover{
+        background-color: $primary-90 ;
+    }
 }
