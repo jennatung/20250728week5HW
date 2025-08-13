@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />    
+    <title>聯絡我們 - 職旅｜Workway</title>
+    <script type="module" crossorigin src="/20250728week5HW/assets/main-B5vbk2tc.js"></script>
+    <link rel="stylesheet" crossorigin href="/20250728week5HW/assets/main-B0okuSJ0.css">
+  </head>
+  <body>
+    
+<nav class="navbar fixed-top navbar-expand-md bg-white border-bottom py-3">  
+  <div class="container">
+    <!-- 品牌 LOGO -->
+    <a class="navbar-brand" href="index.html">
+        <img src="/20250728week5HW/assets/logo-CRTeTChE.svg" alt="職旅Workway" class="nav-img">
+    </a>
+
+    <!-- 登入註冊按鈕-可切換登入 -->
+    <input type="checkbox" class="btn-check successfully-login" id="btn-check" autocomplete="off">
+    <label for="btn-check" class="btn btn-outline-natural-85 text-black order-md-1" data-bs-toggle="modal" data-bs-target="#WorkWay-Login">
+      <span class="login-text px-md-3 px-1">登入/註冊</span>
+      <span class="login-avatar">
+        <a href="user.html">
+          <img src="/20250728week5HW/assets/avatar-QGHQ479s.png" alt="Mokumaru" style="width: 44px; height: 44px;"  class="rounded-pill border me-2">
+          <span class="text-black fw-medium fs-md-7 fs-8 align-middle">Mokumaru</span>          
+        </a>
+      </span>
+
+    </label>
+    
+    <!-- 登入註冊按鈕-無切換功能 -->
+    <!-- <button type="button" class="btn btn-outline-natural-85 text-black order-md-1 ms-auto" data-bs-toggle="modal" data-bs-target="#WorkWay-Login" aria-expanded="false">
+      登入/註冊
+    </button> -->
+
+    <!-- 響應式漢堡 -->
+    <button class="navbar-toggler order-md-2 ms-md-3 ms-0" type="button" data-bs-toggle="modal" data-bs-target="#Workway-nav" aria-controls="Workway-nav" aria-expanded="false" aria-label="Workway Nav" style="border: 0;">
+      <span class="navbar-toggler-icon"></span>
+    </button> 
+
+    <!-- nav-item -->
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item me-3">
+          <a class="nav-link" aria-current="page" href="plan.html">服務方案</a>
+        </li>
+        <li class="nav-item me-3">
+          <a class="nav-link" aria-current="page" href="about.html">關於職旅</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="contact-us.html">聯絡我們</a>
+        </li>
+      </ul>
+    </div>    
+    
+    <!-- 使用者Mokumaru -->
+    <!-- <a href="user.html"><img src="../assets/images/avatar.png" alt="Mokumaru" style="width: 44px; height: 44px;"  class="rounded-pill border me-2">Mokumaru</a> -->
+
+  </div>
+</nav>
+
+<!-- 手機-nav-item-modal -->
+<div class="modal fade" id="Workway-nav" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content pt-6 px-6">
+      <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close" style="padding: 15px;"></button>
+      <div class="modal-body px-6">
+        <ul class="navbar-nav d-flex align-items-center gap-6">
+          <li class="nav-item py-4">
+            <a class="nav-link" aria-current="page" href="plan.html">服務方案</a>
+          </li>
+          <li class="nav-item py-4">
+            <a class="nav-link" aria-current="page" href="about.html">關於職旅</a>
+          </li>
+          <li class="nav-item py-4">
+            <a class="nav-link" aria-current="page" href="contact-us.html">聯絡我們</a>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer mb-6" style="border: 0;">
+        <!-- 登入註冊按鈕 -->
+        <button type="button" class="btn btn-secondary w-75 mx-auto rounded-1 fw-bold fs-5" data-bs-toggle="modal" data-bs-target="#WorkWay-Login" aria-expanded="false">登入/註冊</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 登入modal -->
+<div class="modal fade" id="WorkWay-Login" data-bs-backdrop="static" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-fullscreen-xl-down modal-dialog-centered">
+    <div class="modal-content">      
+      <div class="modal-body p-0 rounded-3 d-flex">        
+        <div class="container-fluid">
+          <div class="row">
+            <div class="d-none d-xl-block col-xl-7" style="background-image: url(/20250728week5HW/assets/login-DRI71ClI.png); background-size: cover; background-position: right; border-radius: 24px 0 0 24px;">
+            </div>
+            <div class="col-xl-5">
+              <div class="pt-9 px-md-9 px-6 d-flex flex-column align-items-center gap-md-9 gap-6 position-relative">
+                <!-- 關閉按鈕  -->
+                <button type="button" class="btn-close position-absolute mt-5 me-5 top-0 end-0" data-bs-dismiss="modal" aria-label="Close" style="padding: 15px;"></button>
+                <h2 class="fw-bold fs-3 fs-md-2">登入</h2>                
+                <div class="d-flex flex-column gap-4 w-100">                  
+                  <button type="button" class="btn btn-outline-natural-85 text-black py-3 fs-md-7 fs-8 lh-base"><img class="align-bottom pe-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJmSURBVHgBtVNPaxNBFH+zm8aYlpJ6EEsPbsSbgjmkJYjQiY3gzW0qUhFs/AbpRQ89pFK810+Q7aUSsTZ3G7MFkWIrzVHw0O2hVgzCxjZVs9kZZzZumF3SJCD+YJk3789v3nv7HoI+cIgTiiuP6ltGL390mqGaimNK0BxCoFKAiBBgsnvRtunKqL6j90W6h3FkSD7OU0Aq9IZWt635qF4xRaUkXg5vJ5RB+WS3T0KOTFCWsV8ZEC+yRcoAVPG6UBMo0hA72WMRVrrKWvLXB2XGSh+LftJ2+dV0bJHWBnKikQBkL5S2n/uDqqmJHKVgnC99WIEOaJP+fjW4d7R6WSG1YFfCvtHckFVrY4Dyr/ZEod9ujufhH+D0lCJpEmhLEb51AMErpgZvvY54qa5KEtzpRkYajXn96YjpkLIeRKhgDI39MvwBEoJr7PkMdAE6E9LYsSnBf0CrfLYlonKrEYkCfN33ZIEIHynDG07ZpqGIn9T5+9abAGZRZS4v169C4eclfWd2LQk9MPXsuMwSwu6dNKwR3lOn/ECgWTmww+ZDE3NCrsIThZm5boSppSMsErK51Tkhlx1SlATzrjm1/Lk53A4iFLT4ajrbiTCRX8BEQuuijpFqIJbvIl5I77L5iok6tp4GO4oUgYkonxLHjgd+3IDQ9weASJj/E6O8MBR1Yzy73yTBaRlZZfaS0s4AEJezPFIcO2v4HdhnP0H4y2MDTs4lvYn4EHsxqzDiHDNkoDf0JrUfVe4Xja6kLsZfTk8SImWYh8rLbmfeakMFSWRx+976ZqfYU0lFXF9LX3Tl9zOv93v5/wGd6OL5H4ZZtgAAAABJRU5ErkJggg==" alt="google登入">Google</button>
+                  <button type="button" class="btn btn-outline-natural-85 text-black py-3 fs-md-7 fs-8 lh-base"><img class="align-bottom pe-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGhSURBVHgB5ZRNTsJAFMffDNKgiUlNhJWJ5QZwAuoJ1AURWdUFieLC3gBvYN3Awg2uIHGhNxBvgCegCxMMibEbggKd50xJS6fUz8QV/0077+M3b+bNDMBSi8QZ98yeujpd15GxXYK002psXvu+w5Nnk1G6TRnthu1fQsuVQY4l4Zb/amKMAA6PsgmCKr7coIfCbXcy3r+52up+Ci0d9zWgiXsf+EPZb8owf2dlHd9AJTdN6L8ECmmp8dqZhIkE1OBPIkYstFgd5CBSJd8bvldoR2wOIOlEqFqx8pRbgCYBClIyAatVz+RTipL3QJ7QHinDbLuR3iGEWFJ1SaWwAHWB6PLk1Oto09pwkJDurEri+A0huLCCoNKVAEFAQ5wHIbLzcvVFRXCziKh7Np54cDq44MfrkQGY30J5ogqyNAauFbHxCmVYkA8Q5FP4BwVQhuwy7EDeKL6m5uwEzCQaJsbCF20Uz2iG4uYqVfsGn4efVaJBzE3xZZiv6vt42kMQW4b8ClOj1Ug/xEJleKLQrmeO4vwCOppMapQBf1QysY/KEusDxNOVemh1aZ0AAAAASUVORK5CYII=" alt="discord登入">Discord</button>
+                  <hr class="text-natural-85" style="opacity: 100%;">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput" class="fs-md-7 fs-8 lh-base">帳號</label>
+                  </div>
+                  <div class="input-group">
+                    <div class="form-floating position-relative">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword" class="fs-md-7 fs-8 lh-base">密碼</label>
+                      <button type="button" class="btn btn btn-link text-black position-absolute top-50 end-0 translate-middle-y">
+                        <span class="material-icons-outlined pt-1">visibility_off</span>
+                      </button>
+                    </div>
+
+                  </div>
+                  <a href="#" class="ms-auto fs-8 lh-base text-natural-50">忘記密碼</a>
+
+                  <input type="checkbox" class="btn-check successfully-login" id="btn-check" autocomplete="off">
+                  <label class="btn btn-dark rounded-1 py-3" for="btn-check">
+                    送出<span class="material-icons-outlined align-top ms-1" style="width: 20px; height: 20px;">chevron_right</span>
+                  </label>
+
+                </div>
+                <div class="d-flex align-items-center" style="padding-bottom: 142px;">
+                  <p class="fs-8 fs-md-7 fw-medium fs-8 fs-md-7 text-natural-50 pe-1">不是會員？</p>
+                  <button type="button" class="btn btn-link p-0" style="text-decoration: underline;" data-bs-toggle="modal" data-bs-target="#WorkWay-Signin" aria-expanded="false">快速註冊</button>                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>    
+    </div>
+  </div>
+</div>
+
+<!-- 註冊modal -->
+<div class="modal fade" id="WorkWay-Signin" data-bs-backdrop="static" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-fullscreen-xl-down modal-dialog-centered">
+    <div class="modal-content">      
+      <div class="modal-body p-0 rounded-3 d-flex">        
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-5">
+              <div class="pt-9 px-md-9 px-6 d-flex flex-column align-items-center gap-md-9 gap-6 position-relative">
+                <!-- 關閉按鈕  -->
+                <button type="button" class="btn-close position-absolute mt-5 me-5 top-0 end-0" data-bs-dismiss="modal" aria-label="Close" style="padding: 15px;"></button>
+                <h2 class="fw-bold fs-3 fs-md-2">註冊</h2>                
+                <div class="d-flex flex-column gap-4 w-100">                  
+                  <button type="button" class="btn btn-outline-natural-85 text-black py-3 fs-md-7 fs-8 lh-base"><img class="align-bottom pe-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJmSURBVHgBtVNPaxNBFH+zm8aYlpJ6EEsPbsSbgjmkJYjQiY3gzW0qUhFs/AbpRQ89pFK810+Q7aUSsTZ3G7MFkWIrzVHw0O2hVgzCxjZVs9kZZzZumF3SJCD+YJk3789v3nv7HoI+cIgTiiuP6ltGL390mqGaimNK0BxCoFKAiBBgsnvRtunKqL6j90W6h3FkSD7OU0Aq9IZWt635qF4xRaUkXg5vJ5RB+WS3T0KOTFCWsV8ZEC+yRcoAVPG6UBMo0hA72WMRVrrKWvLXB2XGSh+LftJ2+dV0bJHWBnKikQBkL5S2n/uDqqmJHKVgnC99WIEOaJP+fjW4d7R6WSG1YFfCvtHckFVrY4Dyr/ZEod9ujufhH+D0lCJpEmhLEb51AMErpgZvvY54qa5KEtzpRkYajXn96YjpkLIeRKhgDI39MvwBEoJr7PkMdAE6E9LYsSnBf0CrfLYlonKrEYkCfN33ZIEIHynDG07ZpqGIn9T5+9abAGZRZS4v169C4eclfWd2LQk9MPXsuMwSwu6dNKwR3lOn/ECgWTmww+ZDE3NCrsIThZm5boSppSMsErK51Tkhlx1SlATzrjm1/Lk53A4iFLT4ajrbiTCRX8BEQuuijpFqIJbvIl5I77L5iok6tp4GO4oUgYkonxLHjgd+3IDQ9weASJj/E6O8MBR1Yzy73yTBaRlZZfaS0s4AEJezPFIcO2v4HdhnP0H4y2MDTs4lvYn4EHsxqzDiHDNkoDf0JrUfVe4Xja6kLsZfTk8SImWYh8rLbmfeakMFSWRx+976ZqfYU0lFXF9LX3Tl9zOv93v5/wGd6OL5H4ZZtgAAAABJRU5ErkJggg==" alt="google登入">Google</button>
+                  <button type="button" class="btn btn-outline-natural-85 text-black py-3 fs-md-7 fs-8 lh-base"><img class="align-bottom pe-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGhSURBVHgB5ZRNTsJAFMffDNKgiUlNhJWJ5QZwAuoJ1AURWdUFieLC3gBvYN3Awg2uIHGhNxBvgCegCxMMibEbggKd50xJS6fUz8QV/0077+M3b+bNDMBSi8QZ98yeujpd15GxXYK002psXvu+w5Nnk1G6TRnthu1fQsuVQY4l4Zb/amKMAA6PsgmCKr7coIfCbXcy3r+52up+Ci0d9zWgiXsf+EPZb8owf2dlHd9AJTdN6L8ECmmp8dqZhIkE1OBPIkYstFgd5CBSJd8bvldoR2wOIOlEqFqx8pRbgCYBClIyAatVz+RTipL3QJ7QHinDbLuR3iGEWFJ1SaWwAHWB6PLk1Oto09pwkJDurEri+A0huLCCoNKVAEFAQ5wHIbLzcvVFRXCziKh7Np54cDq44MfrkQGY30J5ogqyNAauFbHxCmVYkA8Q5FP4BwVQhuwy7EDeKL6m5uwEzCQaJsbCF20Uz2iG4uYqVfsGn4efVaJBzE3xZZiv6vt42kMQW4b8ClOj1Ug/xEJleKLQrmeO4vwCOppMapQBf1QysY/KEusDxNOVemh1aZ0AAAAASUVORK5CYII=" alt="discord登入">Discord</button>
+                  <hr class="text-natural-85" style="opacity: 100%;">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput" class="fs-md-7 fs-8 lh-base">帳號</label>
+                  </div>
+                  <div class="input-group">
+                    <div class="form-floating position-relative">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword" class="fs-md-7 fs-8 lh-base">密碼</label>
+                      <button type="button" class="btn btn btn-link text-black position-absolute top-50 end-0 translate-middle-y">
+                        <span class="material-icons-outlined pt-1">visibility_off</span>
+                      </button>                      
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <div class="form-floating position-relative">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword" class="fs-md-7 fs-8 lh-base">確認密碼</label>
+                      <button type="button" class="btn btn btn-link text-black position-absolute top-50 end-0 translate-middle-y">
+                        <span class="material-icons-outlined pt-1">visibility_off</span>
+                      </button>                      
+                    </div>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="agreement">
+                    <label class="form-check-label" for="agreement">
+                      我同意<a href="service.html" class="text-primary px-1" style="text-decoration: underline;" target="_blank">服務條款</a>和<a href="privacy.html" class="text-primary px-1" style="text-decoration: underline;" target="_blank">隱私政策</a>
+                    </label>
+                  </div>
+
+                  <input type="checkbox" class="btn-check successfully-login" id="btn-check" autocomplete="off">
+                  <label class="btn btn-dark rounded-1 py-3" for="btn-check">
+                    送出<span class="material-icons-outlined align-top ms-1" style="width: 20px; height: 20px;">chevron_right</span>
+                  </label>
+
+                </div>
+                <div class="d-flex align-items-center" style="padding-bottom: 142px;">
+                  <p class="fs-8 fs-md-7 fw-medium fs-8 fs-md-7 text-natural-50 pe-1">已經會員？</p>
+                  <button type="button" class="btn btn-link p-0" style="text-decoration: underline;" data-bs-toggle="modal" data-bs-target="#WorkWay-Login" aria-expanded="false">直接登入</button>                
+                </div>
+              </div>
+            </div>
+
+            <div class="d-none d-xl-block col-xl-7" style="background-image: url(/20250728week5HW/assets/register-Cfh0nsYT.png); background-size: cover; background-position: left; border-radius: 0 24px 24px 0;">
+            </div>
+
+          </div>
+        </div>
+      </div>    
+    </div>
+  </div>
+</div>
+
+    <section class="bg-natural-95 text-center py-md-12 py-9">
+      <h1 class="fw-bold fs-mb-2 fs-3 mb-md-6 mb-4">聯絡我們</h1>
+      <p class="lh-base fs-md-6 fs-7 mb-md-9 mb-6 text-natural-50">每一封郵件，我們都會親自回覆。每一通電話，都是新可能的開始。</p>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <form class="bg-white rounded-3 p-md-9 p-6 shadow position-relative">
+              <img src="/20250728week5HW/assets/form-top-F0dOtpe4.svg" class="position-absolute d-none d-xl-block" alt="聯絡我們" style="top: -140px; right: 40px;">
+              <!-- 1.基本資料 -->
+              <div class="d-flex flex-column flex-md-row gap-md-6 gap-4 border-bottom pb-md-9 pb-6 mb-md-9 mb-6">
+                <!-- 左側表單 -->
+                <div class="col-md-3 d-flex flex-md-column align-items-md-start justify-content-between justify-content-md-start">
+                  <h2 class="fs-md-4 fs-5 fw-medium mb-md-3 mb-0">基本資料</h2>
+                  <p class="text-natural-50 fs-md-7 fs-8 lh-base align-middle">欄位皆為<span class="badge rounded-pill text-bg-danger ms-1 py-1">必填</span></p>
+                </div>
+                <!-- 右側表單 -->
+                <div class="col d-flex flex-column gap-md-6 gap-4 flex-grow-1 text-start">
+                  <!-- 姓名 -->
+                  <div class="form-floating">                     
+                    <input type="text" class="form-control" id="username" placeholder="請輸入姓名">
+                    <label for="username" class="fs-md-7 fs-8 lh-base">姓名</label>                                  
+                  </div>
+                  <!-- 信箱 -->
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="email" placeholder="請輸入信箱">
+                    <label for="email" class="fs-md-7 fs-8 lh-base">信箱</label>
+                    <div class="form-text ms-2 text-natural-50 fs-8 lh-base">盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信</div>
+                  </div>
+                  <!-- 聯絡電話 -->
+                  <div class="form-floating">
+                    <input type="tel" class="form-control" id="phonenumber" placeholder="請輸入聯絡電話">
+                    <label for="phonenumber" class="fs-md-7 fs-8 lh-base">聯絡電話</label>
+                    <div class="form-text ms-2 text-natural-50 fs-8 lh-base">我們不會以電話主動聯繫您，告知您要至ATM操作轉帳</div>
+                  </div>  
+                  <!-- 目前職業/工作身分 -->                      
+                  <div class="dropdown">
+                    <button class="form-select text-start py-3 fs-md-7 fs-8 lh-base" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          目前職業/工作身分
+                    </button>
+                    <ul class="dropdown-menu w-100 mt-2">
+                      <li><a class="dropdown-item" href="#">科技</a></li>
+                      <li><a class="dropdown-item" href="#">媒體</a></li>
+                      <li><a class="dropdown-item" href="#">教育</a></li>
+                      <li><a class="dropdown-item" href="#">金融</a></li>
+                      <li><a class="dropdown-item" href="#">醫療健康</a></li>
+                      <li><a class="dropdown-item" href="#">零售製造</a></li>
+                      <li><a class="dropdown-item" href="#">服務業</a></li>
+                      <li><a class="dropdown-item" href="#">藝術創意</a></li>
+                      <li><a class="dropdown-item" href="#">非營利組織</a></li>
+                      </ul>
+                    </div>
+                </div>
+
+
+
+              </div>
+              <!-- 2.諮詢需求 -->
+              <div class="d-flex flex-column flex-md-row gap-md-6 gap-4 border-bottom pb-md-9 pb-6 mb-md-9 mb-6">
+                <!-- 左側表單 -->
+                <div class="col-md-3 d-flex flex-md-column align-items-md-start justify-content-between justify-content-md-start">
+                  <h2 class="fs-md-4 fs-5 fw-medium mb-md-3 mb-0">諮詢需求</h2>
+                  <p class="text-natural-50 fs-md-7 fs-8 lh-base align-middle">欄位皆為<span class="badge rounded-pill text-bg-danger ms-1 py-1">必填</span></p>
+                </div>
+                <!-- 右側表單 -->
+                <div class="col d-flex flex-column gap-md-6 gap-4 flex-grow-1 text-start">
+                  <!-- 諮詢主題 -->
+                  <div>
+                    <p class="mb-2 fs-md-7 fs-8 lh-base">諮詢主題</p>
+                    <div class="ps-md-2 ps-0 d-flex flex-wrap column-gap-md-6 column-gap-4">
+                      <!-- 職涯探索與方向 -->
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="career-direction" value="career-direction">
+                        <label class="form-check-label fs-8 lh-base" for="career-direction">職涯探索與方向</label>
+                      </div>
+                      <!-- 接案與技能變現 -->
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="skill-monetize" value="skill-monetize">
+                        <label class="form-check-label fs-8 lh-base" for="skill-monetize">接案與技能變現</label>
+                      </div>
+                      <!-- 品牌與內容經營 -->
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="careerChallenges-unstableIncome" value="brand-content">
+                        <label class="form-check-label fs-8 lh-base" for="careerChallenges-unstableIncome">品牌與內容經營</label>
+                      </div>
+                      <!-- 遠端工作與數位游牧 -->
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="remote-nomad" value="remote-nomad">
+                        <label class="form-check-label fs-8 lh-base" for="remote-nomad">遠端工作與數位游牧</label>
+                      </div>
+                      <!-- 收入與時間管理 -->
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="income-time" value="income-time">
+                        <label class="form-check-label fs-8 lh-base" for="income-time">收入與時間管理</label>
+                      </div>
+                      <!-- 其他（請填寫下題） -->
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="other" value="other">
+                        <label class="form-check-label fs-8 lh-base" for="other">其他（請填寫下題）</label>
+                      </div>
+                    </div>
+                    <div class="ms-md-2 md-0 text-natural-50 fs-8 lh-base">可複選，讓我們更了解你的狀況，安排最適合的顧問與建議。</div>
+                  </div>
+                  <!-- 期望諮詢的專家 -->                      
+                  <div class="dropdown">
+                    <button class="form-select text-start py-3 fs-md-7 fs-8 lh-base" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      期望諮詢的專家
+                    </button>
+                    <ul class="dropdown-menu w-100 mt-2">
+                      <li><a class="dropdown-item" href="#">專家A</a></li>
+                      <li><a class="dropdown-item" href="#">專家B</a></li>
+                      <li><a class="dropdown-item" href="#">專家C</a></li>
+                    </ul>
+                  </div>
+                  <!-- 您目前面臨的主要挑戰 -->
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="challange" style="height: 160px" maxlength="300"></textarea>
+                    <label for="challange" class="fs-md-7 fs-8 lh-base">您目前面臨的主要挑戰</label>
+                  </div>               
+                  <!-- 期望達成的目標 -->
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="goal" style="height: 160px" maxlength="300"></textarea>
+                    <label for="goal" class="fs-md-7 fs-8 lh-base">期望達成的目標</label>
+                  </div>
+                </div>
+              </div>
+              <!-- 3.聯絡偏好 -->
+              <div class="d-flex flex-column flex-md-row gap-md-6 gap-4 mb-md-9 mb-6">
+                <!-- 左側表單 -->
+                <div class="col-md-3 d-flex flex-md-column align-items-md-start justify-content-between justify-content-md-start">
+                  <h2 class="fs-md-4 fs-5 fw-medium mb-md-3 mb-0">聯絡偏好</h2>
+                  <p class="text-natural-50 fs-md-7 fs-8 lh-base align-middle">欄位皆為選填</p>
+                </div>  
+                <!-- 右側表單 -->
+                <div class="col d-flex flex-column gap-md-6 gap-4 flex-grow-1 text-start">
+                  <!-- 偏好聯絡方式 -->
+                  <div>
+                    <p class="mb-2 fs-md-7 fs-8">偏好聯絡方式</p>
+                    <div class="px-2 d-flex flex-wrap column-gap-md-6 column-gap-4">
+                      <div class="form-check form-check-inline m-0">
+                        <input class="form-check-input" type="radio" name="fav-contact" id="contact-email" value="female" checked>
+                        <label class="form-check-label lh-base fs-8" for="contact-email">信箱</label>
+                      </div>                        
+                      <div class="form-check form-check-inline m-0">
+                        <input class="form-check-input" type="radio" name="fav-contact" id="contact-phone" value="male">
+                        <label class="form-check-label lh-base fs-8" for="contact-phone">電話</label>
+                      </div>                        
+                      <div class="form-check form-check-inline m-0">
+                        <input class="form-check-input" type="radio" name="fav-contact" id="contact-line" value="refuse">
+                        <label class="form-check-label lh-base fs-8" for="contact-line">LINE</label>
+                      </div>  
+                      <div class="form-check form-check-inline m-0">
+                        <input class="form-check-input" type="radio" name="fav-contact" id="contact-discord" value="refuse">
+                        <label class="form-check-label lh-base fs-8" for="contact-discord">Discord</label>
+                      </div>  
+                    </div>                      
+                  </div>
+                  <!-- 偏好聯絡時段 -->
+                  <div>
+                    <p class="mb-2 fs-md-7 fs-8 lh-base">偏好聯絡時段</p>
+                    <div class="ps-md-2 ps-0 d-flex flex-wrap column-gap-md-6 column-gap-4">
+                      <!-- 平日上午(9:00-12:00) -->
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="weekday-am" value="weekday-am">
+                        <label class="form-check-label fs-8 lh-base" for="weekday-am">平日上午(9:00-12:00)</label>
+                      </div>
+                      <!-- 平日下午(13:00-17:00) -->
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="weekday-pm" value="weekday-pm">
+                        <label class="form-check-label fs-8 lh-base" for="weekday-pm">平日下午(13:00-17:00)</label>
+                      </div>
+                      <!-- 平日晚上(18:00-21:00) -->
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="weekday-night" value="weekday-night">
+                        <label class="form-check-label fs-8 lh-base" for="weekday-night">平日晚上(18:00-21:00)</label>
+                      </div>
+                      <!-- 週末上午(9:00-12:00) -->
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="weekend-am" value="weekend-am">
+                        <label class="form-check-label fs-8 lh-base" for="weekend-am">週末上午(9:00-12:00)</label>
+                      </div>
+                      <!-- 週末下午(13:00-17:00) -->
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="weekend-pm" value="weekend-pm">
+                        <label class="form-check-label fs-8 lh-base" for="weekend-pm">週末下午(13:00-17:00)</label>
+                      </div>
+                      <!-- 週末晚上(18:00-21:00) -->
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="weekend-night" value="weekend-night">
+                        <label class="form-check-label fs-8 lh-base" for="weekend-night">週末晚上(18:00-21:00)</label>
+                      </div>
+                    </div>
+                    <div class="ms-md-2 md-0 text-natural-50 fs-8 lh-base">建議您可以勾選 2 個時段以上</div>
+                  </div>
+                  <!-- 預約諮詢時間 -->
+                  <div class="form-floating">
+                    <input type="date" class="form-control" id="book-time" placeholder="請輸入預約諮詢時間" value="2000/01/10">
+                    <label for="book-time" class="text-natural-50 fs-8 lh-base">預約諮詢時間</label>                             
+                  </div>
+                  <!-- 如何得知我們 -->
+                  <div>
+                    <p class="mb-2 fs-md-7 fs-8 lh-base">如何得知我們</p>
+                    <div class="ps-md-2 ps-0 d-flex flex-wrap column-gap-md-6 column-gap-4">
+                      <!-- Google 搜尋 -->
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="google-search" value="google-search">
+                        <label class="form-check-label fs-8 lh-base" for="google-search">Google 搜尋</label>
+                      </div>
+                      <!-- Instagram -->
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="instagram" value="instagram">
+                        <label class="form-check-label fs-8 lh-base" for="instagram">Instagram</label>
+                      </div>
+                      <!-- Facebook -->
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="facebook" value="facebook">
+                        <label class="form-check-label fs-8 lh-base" for="facebook">Facebook</label>
+                      </div>
+                      <!-- Threads -->
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="threads" value="threads">
+                        <label class="form-check-label fs-8 lh-base" for="threads">Threads</label>
+                      </div>
+                      <!-- YouTube -->
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="youtube" value="youtube">
+                        <label class="form-check-label fs-8 lh-base" for="youtube">YouTube</label>
+                      </div>
+                      <!-- Podcast / 節目推薦 -->
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="podcast-recs" value="podcast-recs">
+                        <label class="form-check-label fs-8 lh-base" for="podcast-recs">Podcast / 節目推薦</label>
+                      </div>
+                      <!-- 朋友或同事推薦 -->
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="friends-recommend" value="friends-recommend">
+                        <label class="form-check-label fs-8 lh-base" for="friends-recommend">朋友或同事推薦</label>
+                      </div>
+                      <!-- 曾參加職旅活動 / 工作坊 -->
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="attended-workshop" value="attended-workshop">
+                        <label class="form-check-label fs-8 lh-base" for="attended-workshop">曾參加職旅活動 / 工作坊</label>
+                      </div>
+                      <!-- 職涯顧問介紹 -->
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="advisor-referral" value="advisor-referral">
+                        <label class="form-check-label fs-8 lh-base" for="advisor-referral">職涯顧問介紹</label>
+                      </div>
+                      <!-- 其他（請填寫下題） -->
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="other" value="other">
+                        <label class="form-check-label fs-8 lh-base" for="other">其他（請填寫下題）</label>
+                      </div>
+                    </div>
+                    <div class="ms-md-2 md-0 text-natural-50 fs-8 lh-base">最多勾選 3 個</div>
+                  </div>
+                  <!-- 有什麼其他想告訴我們的事情嗎？ -->
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="goal" style="height: 160px" maxlength="300"></textarea>
+                    <label for="goal" class="fs-md-7 fs-8 lh-base">有什麼其他想告訴我們的事情嗎？（最多300字）</label>
+                  </div>
+                  <!-- 服務條款 -->
+                  <div>
+                    <div class="form-check fs-8">
+                      <input class="form-check-input" type="checkbox" value="" id="subscribe-updates">
+                      <label class="form-check-label" for="subscribe-updates">
+                        我願意接收職旅最新資訊和專業內容
+                      </label>
+                    </div>
+                    <div class="form-check fs-8">
+                      <input class="form-check-input" type="checkbox" value="" id="privacy-agreement">
+                      <label class="form-check-label" for="privacy-agreement">
+                        我同意<a href="service.html" class="text-primary px-1" style="text-decoration: underline;" target="_blank">服務條款</a>和<a href="privacy.html" class="text-primary px-1" style="text-decoration: underline;" target="_blank">隱私政策</a>                        
+                      </label>
+                    </div>
+
+
+
+                  </div>                  
+                </div>
+              </div>
+              <!-- 重新填寫、確認送出按鈕 -->
+              <div class="d-flex flex-md-row flex-column-reverse justify-content-md-center gap-md-6 gap-4">
+                <button type="button" class="btn rounded-4 btn-outline-natural-85 text-black py-3 ps-5 pe-4 border fs-md-7 fs-8">
+                  重新填寫<span class="material-icons-outlined align-text-top">keyboard_arrow_right</span>
+                </button>
+                <button type="button" class="btn rounded-4 btn-dark py-3 ps-5 pe-4 fs-md-7 fs-8">確認送出<span class="material-icons-outlined align-text-top">keyboard_arrow_right</span></button>                
+              </div>
+
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+
+    </section>   
+    <footer class="navbar bg-gray border-top py-md-9 py-6">
+    <div class="container">
+        <div class="d-flex flex-md-row flex-column justify-content-md-between align-items-center flex-grow-1">
+            <ul class="d-flex flex-row flex-wrap justify-content-center navbar-nav row-gap-2">
+                <li class="nav-item">
+                    <a class="nav-link py-2 px-md-6 px-4 ms-auto ms-md-0" aria-current="page" href="plan.html">服務方案</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-2 px-md-6 px-4" aria-current="page" href="about.html">關於職旅</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-2 px-md-6 px-4 me-auto me-md-0" aria-current="page" href="contact-us.html">聯絡我們</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-2 px-md-6 px-4 ms-auto ms-md-0" aria-current="page" href="privacy.html">隱私權政策</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-2 px-md-6 px-4 me-auto me-md-0" aria-current="page" href="service.html">用戶條款</a>
+                </li>
+            </ul>
+            <p class="text-natural-50 fs-8 mt-2 mt-md-0">Copyright © 2025 職旅 workway. All rights reserved.</p>
+        </div>
+</footer>    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
+

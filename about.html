@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />    
+    <title>關於職旅 - 職旅｜Workway</title>
+    <script type="module" crossorigin src="/20250728week5HW/assets/main-B5vbk2tc.js"></script>
+    <link rel="stylesheet" crossorigin href="/20250728week5HW/assets/main-B0okuSJ0.css">
+  </head>
+  <body>
+    
+<nav class="navbar fixed-top navbar-expand-md bg-white border-bottom py-3">  
+  <div class="container">
+    <!-- 品牌 LOGO -->
+    <a class="navbar-brand" href="index.html">
+        <img src="/20250728week5HW/assets/logo-CRTeTChE.svg" alt="職旅Workway" class="nav-img">
+    </a>
+
+    <!-- 登入註冊按鈕-可切換登入 -->
+    <input type="checkbox" class="btn-check successfully-login" id="btn-check" autocomplete="off">
+    <label for="btn-check" class="btn btn-outline-natural-85 text-black order-md-1" data-bs-toggle="modal" data-bs-target="#WorkWay-Login">
+      <span class="login-text px-md-3 px-1">登入/註冊</span>
+      <span class="login-avatar">
+        <a href="user.html">
+          <img src="/20250728week5HW/assets/avatar-QGHQ479s.png" alt="Mokumaru" style="width: 44px; height: 44px;"  class="rounded-pill border me-2">
+          <span class="text-black fw-medium fs-md-7 fs-8 align-middle">Mokumaru</span>          
+        </a>
+      </span>
+
+    </label>
+    
+    <!-- 登入註冊按鈕-無切換功能 -->
+    <!-- <button type="button" class="btn btn-outline-natural-85 text-black order-md-1 ms-auto" data-bs-toggle="modal" data-bs-target="#WorkWay-Login" aria-expanded="false">
+      登入/註冊
+    </button> -->
+
+    <!-- 響應式漢堡 -->
+    <button class="navbar-toggler order-md-2 ms-md-3 ms-0" type="button" data-bs-toggle="modal" data-bs-target="#Workway-nav" aria-controls="Workway-nav" aria-expanded="false" aria-label="Workway Nav" style="border: 0;">
+      <span class="navbar-toggler-icon"></span>
+    </button> 
+
+    <!-- nav-item -->
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item me-3">
+          <a class="nav-link" aria-current="page" href="plan.html">服務方案</a>
+        </li>
+        <li class="nav-item me-3">
+          <a class="nav-link" aria-current="page" href="about.html">關於職旅</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="contact-us.html">聯絡我們</a>
+        </li>
+      </ul>
+    </div>    
+    
+    <!-- 使用者Mokumaru -->
+    <!-- <a href="user.html"><img src="../assets/images/avatar.png" alt="Mokumaru" style="width: 44px; height: 44px;"  class="rounded-pill border me-2">Mokumaru</a> -->
+
+  </div>
+</nav>
+
+<!-- 手機-nav-item-modal -->
+<div class="modal fade" id="Workway-nav" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content pt-6 px-6">
+      <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close" style="padding: 15px;"></button>
+      <div class="modal-body px-6">
+        <ul class="navbar-nav d-flex align-items-center gap-6">
+          <li class="nav-item py-4">
+            <a class="nav-link" aria-current="page" href="plan.html">服務方案</a>
+          </li>
+          <li class="nav-item py-4">
+            <a class="nav-link" aria-current="page" href="about.html">關於職旅</a>
+          </li>
+          <li class="nav-item py-4">
+            <a class="nav-link" aria-current="page" href="contact-us.html">聯絡我們</a>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer mb-6" style="border: 0;">
+        <!-- 登入註冊按鈕 -->
+        <button type="button" class="btn btn-secondary w-75 mx-auto rounded-1 fw-bold fs-5" data-bs-toggle="modal" data-bs-target="#WorkWay-Login" aria-expanded="false">登入/註冊</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 登入modal -->
+<div class="modal fade" id="WorkWay-Login" data-bs-backdrop="static" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-fullscreen-xl-down modal-dialog-centered">
+    <div class="modal-content">      
+      <div class="modal-body p-0 rounded-3 d-flex">        
+        <div class="container-fluid">
+          <div class="row">
+            <div class="d-none d-xl-block col-xl-7" style="background-image: url(/20250728week5HW/assets/login-DRI71ClI.png); background-size: cover; background-position: right; border-radius: 24px 0 0 24px;">
+            </div>
+            <div class="col-xl-5">
+              <div class="pt-9 px-md-9 px-6 d-flex flex-column align-items-center gap-md-9 gap-6 position-relative">
+                <!-- 關閉按鈕  -->
+                <button type="button" class="btn-close position-absolute mt-5 me-5 top-0 end-0" data-bs-dismiss="modal" aria-label="Close" style="padding: 15px;"></button>
+                <h2 class="fw-bold fs-3 fs-md-2">登入</h2>                
+                <div class="d-flex flex-column gap-4 w-100">                  
+                  <button type="button" class="btn btn-outline-natural-85 text-black py-3 fs-md-7 fs-8 lh-base"><img class="align-bottom pe-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJmSURBVHgBtVNPaxNBFH+zm8aYlpJ6EEsPbsSbgjmkJYjQiY3gzW0qUhFs/AbpRQ89pFK810+Q7aUSsTZ3G7MFkWIrzVHw0O2hVgzCxjZVs9kZZzZumF3SJCD+YJk3789v3nv7HoI+cIgTiiuP6ltGL390mqGaimNK0BxCoFKAiBBgsnvRtunKqL6j90W6h3FkSD7OU0Aq9IZWt635qF4xRaUkXg5vJ5RB+WS3T0KOTFCWsV8ZEC+yRcoAVPG6UBMo0hA72WMRVrrKWvLXB2XGSh+LftJ2+dV0bJHWBnKikQBkL5S2n/uDqqmJHKVgnC99WIEOaJP+fjW4d7R6WSG1YFfCvtHckFVrY4Dyr/ZEod9ujufhH+D0lCJpEmhLEb51AMErpgZvvY54qa5KEtzpRkYajXn96YjpkLIeRKhgDI39MvwBEoJr7PkMdAE6E9LYsSnBf0CrfLYlonKrEYkCfN33ZIEIHynDG07ZpqGIn9T5+9abAGZRZS4v169C4eclfWd2LQk9MPXsuMwSwu6dNKwR3lOn/ECgWTmww+ZDE3NCrsIThZm5boSppSMsErK51Tkhlx1SlATzrjm1/Lk53A4iFLT4ajrbiTCRX8BEQuuijpFqIJbvIl5I77L5iok6tp4GO4oUgYkonxLHjgd+3IDQ9weASJj/E6O8MBR1Yzy73yTBaRlZZfaS0s4AEJezPFIcO2v4HdhnP0H4y2MDTs4lvYn4EHsxqzDiHDNkoDf0JrUfVe4Xja6kLsZfTk8SImWYh8rLbmfeakMFSWRx+976ZqfYU0lFXF9LX3Tl9zOv93v5/wGd6OL5H4ZZtgAAAABJRU5ErkJggg==" alt="google登入">Google</button>
+                  <button type="button" class="btn btn-outline-natural-85 text-black py-3 fs-md-7 fs-8 lh-base"><img class="align-bottom pe-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGhSURBVHgB5ZRNTsJAFMffDNKgiUlNhJWJ5QZwAuoJ1AURWdUFieLC3gBvYN3Awg2uIHGhNxBvgCegCxMMibEbggKd50xJS6fUz8QV/0077+M3b+bNDMBSi8QZ98yeujpd15GxXYK002psXvu+w5Nnk1G6TRnthu1fQsuVQY4l4Zb/amKMAA6PsgmCKr7coIfCbXcy3r+52up+Ci0d9zWgiXsf+EPZb8owf2dlHd9AJTdN6L8ECmmp8dqZhIkE1OBPIkYstFgd5CBSJd8bvldoR2wOIOlEqFqx8pRbgCYBClIyAatVz+RTipL3QJ7QHinDbLuR3iGEWFJ1SaWwAHWB6PLk1Oto09pwkJDurEri+A0huLCCoNKVAEFAQ5wHIbLzcvVFRXCziKh7Np54cDq44MfrkQGY30J5ogqyNAauFbHxCmVYkA8Q5FP4BwVQhuwy7EDeKL6m5uwEzCQaJsbCF20Uz2iG4uYqVfsGn4efVaJBzE3xZZiv6vt42kMQW4b8ClOj1Ug/xEJleKLQrmeO4vwCOppMapQBf1QysY/KEusDxNOVemh1aZ0AAAAASUVORK5CYII=" alt="discord登入">Discord</button>
+                  <hr class="text-natural-85" style="opacity: 100%;">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput" class="fs-md-7 fs-8 lh-base">帳號</label>
+                  </div>
+                  <div class="input-group">
+                    <div class="form-floating position-relative">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword" class="fs-md-7 fs-8 lh-base">密碼</label>
+                      <button type="button" class="btn btn btn-link text-black position-absolute top-50 end-0 translate-middle-y">
+                        <span class="material-icons-outlined pt-1">visibility_off</span>
+                      </button>
+                    </div>
+
+                  </div>
+                  <a href="#" class="ms-auto fs-8 lh-base text-natural-50">忘記密碼</a>
+
+                  <input type="checkbox" class="btn-check successfully-login" id="btn-check" autocomplete="off">
+                  <label class="btn btn-dark rounded-1 py-3" for="btn-check">
+                    送出<span class="material-icons-outlined align-top ms-1" style="width: 20px; height: 20px;">chevron_right</span>
+                  </label>
+
+                </div>
+                <div class="d-flex align-items-center" style="padding-bottom: 142px;">
+                  <p class="fs-8 fs-md-7 fw-medium fs-8 fs-md-7 text-natural-50 pe-1">不是會員？</p>
+                  <button type="button" class="btn btn-link p-0" style="text-decoration: underline;" data-bs-toggle="modal" data-bs-target="#WorkWay-Signin" aria-expanded="false">快速註冊</button>                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>    
+    </div>
+  </div>
+</div>
+
+<!-- 註冊modal -->
+<div class="modal fade" id="WorkWay-Signin" data-bs-backdrop="static" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-fullscreen-xl-down modal-dialog-centered">
+    <div class="modal-content">      
+      <div class="modal-body p-0 rounded-3 d-flex">        
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-5">
+              <div class="pt-9 px-md-9 px-6 d-flex flex-column align-items-center gap-md-9 gap-6 position-relative">
+                <!-- 關閉按鈕  -->
+                <button type="button" class="btn-close position-absolute mt-5 me-5 top-0 end-0" data-bs-dismiss="modal" aria-label="Close" style="padding: 15px;"></button>
+                <h2 class="fw-bold fs-3 fs-md-2">註冊</h2>                
+                <div class="d-flex flex-column gap-4 w-100">                  
+                  <button type="button" class="btn btn-outline-natural-85 text-black py-3 fs-md-7 fs-8 lh-base"><img class="align-bottom pe-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJmSURBVHgBtVNPaxNBFH+zm8aYlpJ6EEsPbsSbgjmkJYjQiY3gzW0qUhFs/AbpRQ89pFK810+Q7aUSsTZ3G7MFkWIrzVHw0O2hVgzCxjZVs9kZZzZumF3SJCD+YJk3789v3nv7HoI+cIgTiiuP6ltGL390mqGaimNK0BxCoFKAiBBgsnvRtunKqL6j90W6h3FkSD7OU0Aq9IZWt635qF4xRaUkXg5vJ5RB+WS3T0KOTFCWsV8ZEC+yRcoAVPG6UBMo0hA72WMRVrrKWvLXB2XGSh+LftJ2+dV0bJHWBnKikQBkL5S2n/uDqqmJHKVgnC99WIEOaJP+fjW4d7R6WSG1YFfCvtHckFVrY4Dyr/ZEod9ujufhH+D0lCJpEmhLEb51AMErpgZvvY54qa5KEtzpRkYajXn96YjpkLIeRKhgDI39MvwBEoJr7PkMdAE6E9LYsSnBf0CrfLYlonKrEYkCfN33ZIEIHynDG07ZpqGIn9T5+9abAGZRZS4v169C4eclfWd2LQk9MPXsuMwSwu6dNKwR3lOn/ECgWTmww+ZDE3NCrsIThZm5boSppSMsErK51Tkhlx1SlATzrjm1/Lk53A4iFLT4ajrbiTCRX8BEQuuijpFqIJbvIl5I77L5iok6tp4GO4oUgYkonxLHjgd+3IDQ9weASJj/E6O8MBR1Yzy73yTBaRlZZfaS0s4AEJezPFIcO2v4HdhnP0H4y2MDTs4lvYn4EHsxqzDiHDNkoDf0JrUfVe4Xja6kLsZfTk8SImWYh8rLbmfeakMFSWRx+976ZqfYU0lFXF9LX3Tl9zOv93v5/wGd6OL5H4ZZtgAAAABJRU5ErkJggg==" alt="google登入">Google</button>
+                  <button type="button" class="btn btn-outline-natural-85 text-black py-3 fs-md-7 fs-8 lh-base"><img class="align-bottom pe-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAYAAABiS3YzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGhSURBVHgB5ZRNTsJAFMffDNKgiUlNhJWJ5QZwAuoJ1AURWdUFieLC3gBvYN3Awg2uIHGhNxBvgCegCxMMibEbggKd50xJS6fUz8QV/0077+M3b+bNDMBSi8QZ98yeujpd15GxXYK002psXvu+w5Nnk1G6TRnthu1fQsuVQY4l4Zb/amKMAA6PsgmCKr7coIfCbXcy3r+52up+Ci0d9zWgiXsf+EPZb8owf2dlHd9AJTdN6L8ECmmp8dqZhIkE1OBPIkYstFgd5CBSJd8bvldoR2wOIOlEqFqx8pRbgCYBClIyAatVz+RTipL3QJ7QHinDbLuR3iGEWFJ1SaWwAHWB6PLk1Oto09pwkJDurEri+A0huLCCoNKVAEFAQ5wHIbLzcvVFRXCziKh7Np54cDq44MfrkQGY30J5ogqyNAauFbHxCmVYkA8Q5FP4BwVQhuwy7EDeKL6m5uwEzCQaJsbCF20Uz2iG4uYqVfsGn4efVaJBzE3xZZiv6vt42kMQW4b8ClOj1Ug/xEJleKLQrmeO4vwCOppMapQBf1QysY/KEusDxNOVemh1aZ0AAAAASUVORK5CYII=" alt="discord登入">Discord</button>
+                  <hr class="text-natural-85" style="opacity: 100%;">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput" class="fs-md-7 fs-8 lh-base">帳號</label>
+                  </div>
+                  <div class="input-group">
+                    <div class="form-floating position-relative">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword" class="fs-md-7 fs-8 lh-base">密碼</label>
+                      <button type="button" class="btn btn btn-link text-black position-absolute top-50 end-0 translate-middle-y">
+                        <span class="material-icons-outlined pt-1">visibility_off</span>
+                      </button>                      
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <div class="form-floating position-relative">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword" class="fs-md-7 fs-8 lh-base">確認密碼</label>
+                      <button type="button" class="btn btn btn-link text-black position-absolute top-50 end-0 translate-middle-y">
+                        <span class="material-icons-outlined pt-1">visibility_off</span>
+                      </button>                      
+                    </div>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="agreement">
+                    <label class="form-check-label" for="agreement">
+                      我同意<a href="service.html" class="text-primary px-1" style="text-decoration: underline;" target="_blank">服務條款</a>和<a href="privacy.html" class="text-primary px-1" style="text-decoration: underline;" target="_blank">隱私政策</a>
+                    </label>
+                  </div>
+
+                  <input type="checkbox" class="btn-check successfully-login" id="btn-check" autocomplete="off">
+                  <label class="btn btn-dark rounded-1 py-3" for="btn-check">
+                    送出<span class="material-icons-outlined align-top ms-1" style="width: 20px; height: 20px;">chevron_right</span>
+                  </label>
+
+                </div>
+                <div class="d-flex align-items-center" style="padding-bottom: 142px;">
+                  <p class="fs-8 fs-md-7 fw-medium fs-8 fs-md-7 text-natural-50 pe-1">已經會員？</p>
+                  <button type="button" class="btn btn-link p-0" style="text-decoration: underline;" data-bs-toggle="modal" data-bs-target="#WorkWay-Login" aria-expanded="false">直接登入</button>                
+                </div>
+              </div>
+            </div>
+
+            <div class="d-none d-xl-block col-xl-7" style="background-image: url(/20250728week5HW/assets/register-Cfh0nsYT.png); background-size: cover; background-position: left; border-radius: 0 24px 24px 0;">
+            </div>
+
+          </div>
+        </div>
+      </div>    
+    </div>
+  </div>
+</div>
+
+
+    <header class="py-md-12 py-9 position-relative" style="background-image: url(/20250728week5HW/assets/banner-bg-pc-CrJ0aIBr.png); background-position: center; background-size: cover;">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-8">
+            <h1 class="fw-bold fs-md-1 fs-2 pb-md-9 pb-6">關於職旅</h1>
+            <p class="lh-base fs-md-6 fs-7 text-natural-50">職旅 WorkWay 匯集了來自不同領域、擁有豐富實戰經驗的自由工作者與數位遊牧專家。根據你的需求和階段，我們提供一對一諮詢。</p>
+            <p class="lh-base fs-md-6 fs-7 text-natural-50">無論你是剛開始探索期，還是已在轉型路上遇到瓶頸，我們都能提供適合你的專業指導。</p>
+          </div>
+        </div>      
+      </div>
+      <img src="/20250728week5HW/assets/banner-person-DTAW4mej.svg" alt="服務方案" class="position-absolute d-none d-xl-block" style="bottom: -10px; right: 400px;">
+    </header>    
+
+    <section class="container py-md-12 py-9">
+      <div class="d-flex flex-column gap-md-9 gap-6">
+        <!-- 標題 -->
+        <div class="text-center">
+          <h2 class="fw-bold fs-md-2 fs-3 mb-md-6 mb-4">精實的職旅夥伴</h2>
+          <p class="lh-base fs-md-6 fs-7 text-natural-50">我們相信，最好的指導來自於那些已經走過你想走的路，並願意伸出手拉你一把的人。</p>
+        </div>
+        <!-- 卡片swiper -->
+        <div class="swiper2 swiper-wrap mb-md-9 mb-6">
+          <ul class="swiper-wrapper">
+            <!-- 卡片1 -->
+            <li class="swiper-slide">
+              <div class="card shadow" style="width: 320px;">
+                <img src="/20250728week5HW/assets/mentor-1-DzIVfJbW.png" alt="數位遊牧先驅" class="card-img-top">
+                <div class="card-body pb-5">
+                  <p class="fw-medium text-natural-50 fs-md-7 fs-8 mb-2">數位遊牧先驅</p>
+                  <h3 class="fw-medium mb-4 fs-md-6 fs-5 mb-4">陳志遠 Ethan Chen</h3>
+                  <div class="mb-8">
+                    <span class="py-1 px-2 rounded-pill border border-natural-85 text-natural-50 fs-8 me-2"># 遠端工作策略</span>
+                    <span class="py-1 px-2 rounded-pill border border-natural-85 text-natural-50 fs-8"># 遠端工作策略</span>
+                  </div>
+                </div>
+              </div>            
+            </li>             
+            <!-- 卡片2 -->
+            <li class="swiper-slide">
+              <div class="card shadow" style="width: 320px;">
+                <img src="/20250728week5HW/assets/mentor-2-BTK6GYqW.png" alt="個人品牌策略專家" class="card-img-top">
+                <div class="card-body pb-5">
+                  <p class="fw-medium text-natural-50 fs-md-7 fs-8 mb-2">個人品牌策略專家</p>
+                  <h3 class="fw-medium mb-4 fs-md-6 fs-5 mb-4">林曉彤 Clara Lin</h3>
+                  <div class="d-flex flex-wrap gap-1">
+                    <span class="py-1 px-2 rounded-pill border border-natural-85 text-natural-50 fs-8 me-2"># 個人品牌建立</span>
+                    <span class="py-1 px-2 rounded-pill border border-natural-85 text-natural-50 fs-8"># 內容行銷策略</span>
+                    <span class="py-1 px-2 rounded-pill border border-natural-85 text-natural-50 fs-8"># 故事行銷</span>
+                  </div>
+                </div>
+              </div>            
+            </li> 
+            <!-- 卡片3 -->
+            <li class="swiper-slide">
+              <div class="card shadow" style="width: 320px;">
+                <img src="/20250728week5HW/assets/mentor-3-CU1P0TLf.png" alt="財務自由規劃顧問" class="card-img-top">
+                <div class="card-body pb-5">
+                  <p class="fw-medium text-natural-50 fs-md-7 fs-8 mb-2">財務自由規劃顧問</p>
+                  <h3 class="fw-medium mb-4 fs-md-6 fs-5 mb-4">王建明 Marcus</h3>
+                  <div class="d-flex flex-wrap gap-1">
+                    <span class="py-1 px-2 rounded-pill border border-natural-85 text-natural-50 fs-8 me-2"># 稅務優化</span>
+                    <span class="py-1 px-2 rounded-pill border border-natural-85 text-natural-50 fs-8"># 被動收入建立</span>
+                    <span class="py-1 px-2 rounded-pill border border-natural-85 text-natural-50 fs-8"># 現金流管理</span>
+                  </div>
+                </div>
+              </div>            
+            </li> 
+            <!-- 卡片4 -->
+            <li class="swiper-slide">
+              <div class="card shadow" style="width: 320px;">
+                <img src="/20250728week5HW/assets/mentor-4-DPZMYEV9.png" alt="創意接案與多元收入專家" class="card-img-top">
+                <div class="card-body pb-5">
+                  <p class="fw-medium text-natural-50 fs-md-7 fs-8 mb-2">創意接案與多元收入專家</p>
+                  <h3 class="fw-medium mb-4 fs-md-6 fs-5 mb-4">創意接案與多元收入專家</h3>
+                  <div class="mb-8">
+                    <span class="py-1 px-2 rounded-pill border border-natural-85 text-natural-50 fs-8 me-2"># 創意變現策略</span>
+                    <span class="py-1 px-2 rounded-pill border border-natural-85 text-natural-50 fs-8"># 線上課程開發</span>
+                  </div>
+                </div>
+              </div>            
+            </li> 
+            <!-- 卡片5 -->
+            <li class="swiper-slide">
+              <div class="card shadow" style="width: 320px;">
+                <img src="/20250728week5HW/assets/mentor-5-g4i84-rV.png" alt="遠端工作技術顧問" class="card-img-top">
+                <div class="card-body pb-5">
+                  <p class="fw-medium text-natural-50 fs-md-7 fs-8 mb-2">遠端工作技術顧問</p>
+                  <h3 class="fw-medium mb-4 fs-md-6 fs-5 mb-4">李俊宏 Kevin Lee</h3>
+                  <div class="mb-8">
+                    <span class="py-1 px-2 rounded-pill border border-natural-85 text-natural-50 fs-8 me-2"># 專案管理自動化</span>
+                    <span class="py-1 px-2 rounded-pill border border-natural-85 text-natural-50 fs-8"># 虛擬團隊管理</span>
+                  </div>
+                </div>
+              </div>            
+            </li> 
+          </ul>
+        </div> 
+        <!-- 團隊承諾 -->
+        <div class="bg-primary px-md-9 px-6 pb-md-9 pb-6 pt-md-6 pt-4 rounded-3 d-flex flex-column align-items-md-center text-center">
+          <div class="speech-bubble fw-bold fs-md-5 fs-6">團隊承諾</div>
+          <p class="text-white mt-5 pt-md-6 pt-4 pb-6 pb-mb-9" style="max-width: 800px;">我們不只是顧問，更是你職業轉型路上的夥伴與同行者。我們深知轉型過程中的不確定與恐懼，也經歷過停滯不前的困境。正因如此，我們更懂得如何陪你走過這段旅程，不只指引方向，更與你並肩同行。</p>
+          <img class="d-none d-md-block" src="/20250728week5HW/assets/text-pc-BW5w9Hcw.svg" alt="團隊承諾">
+          <img class="d-block d-md-none" src="/20250728week5HW/assets/img-BhVBY__b.png" class="h-100" alt="團隊承諾">
+
+
+        </div>
+
+
+
+      </div>
+      
+        
+
+      </div>
+
+  
+
+    </section>
+
+    <section style="background: linear-gradient(to bottom, #F0F3F5 979px, white 0);">
+      <div class="container py-md-12 py-9">
+        <h2 class="fw-bold fs-mb-2 fs-3 py-md-9 py-6 text-center">公司資訊</h2>
+        <div class="card shadow p-md-9 p-6">
+          <ul class="mb-md-9 mb-6">
+            <li class="d-flex border-bottom p-md-6 p-4 gap-6">
+              <p class="fw-bold col-md-1 col-3 fs-md-7 fs-8 text-natural-50 flex-shrink-0">公司位置</p>
+              <p class="fw-medium col fs-md-7 fs-8">110台北市信義區信義路五段7號</p>
+            </li>
+            <li class="d-flex border-bottom p-md-6 p-4 gap-6">
+              <p class="fw-bold col-md-1 col-3 fs-md-7 fs-8 text-natural-50 flex-shrink-0">負責人</p>
+              <p class="fw-medium col fs-md-7 fs-8">張世明</p>
+            </li>
+            <li class="d-flex border-bottom p-md-6 p-4 gap-6">
+              <p class="fw-bold col-md-1 col-3 fs-md-7 fs-8 text-natural-50 flex-shrink-0">聯絡專線</p>
+              <p class="fw-medium col fs-md-7 fs-8">02-2758-6600</p>
+            </li>
+            <li class="d-flex border-bottom p-md-6 p-4 gap-6">
+              <p class="fw-bold col-md-1 col-3 fs-md-7 fs-8 text-natural-50 flex-shrink-0">營業時間</p>
+              <p class="fw-medium col fs-md-7 fs-8">週一至週五 10:00～18:00（國定假日休息）</p>
+            </li>
+            <li class="d-flex border-bottom p-md-6 p-4 gap-6">
+              <p class="fw-bold col-md-1 col-3 fs-md-7 fs-8 text-natural-50 flex-shrink-0">電子郵件</p>
+              <p class="fw-medium col fs-md-7 fs-8">contact@workway.tw</p>
+            </li>
+            <li class="d-flex border-bottom p-md-6 p-4 gap-6">
+              <p class="fw-bold col-md-1 col-3 fs-md-7 fs-8 text-natural-50 flex-shrink-0">成立時間</p>
+              <p class="fw-medium col fs-md-7 fs-8">2023 年 6 月</p>
+            </li>
+            <li class="d-flex border-bottom p-md-6 p-4 gap-6">
+              <p class="fw-bold col-md-1 col-3 fs-md-7 fs-8 text-natural-50 flex-shrink-0">統一編號</p>
+              <p class="fw-medium col fs-md-7 fs-8">83149276</p>
+            </li>
+          </ul>
+          <img src="/20250728week5HW/assets/map-mOP65bZF.png" alt="map" class="golden-box">
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+
+
+    
+    <!-- 邁向你真正想過的生活，從這裡開始 -->
+<section class="container py-8">   
+    <div class="bg-primary rounded-4 py-md-6 py-4 px-md-9 px-6 d-flex flex-column align-items-start gap-6 text-white">
+        <img src="data:image/svg+xml,%3csvg%20width='40'%20height='36'%20viewBox='0%200%2040%2036'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M30.8877%202.60303C35.9206%202.60303%2040.0009%206.71915%2040.001%2011.7964V21.981L40%2022.1069C39.9667%2024.5913%2038.9556%2026.839%2037.3398%2028.4731V33.6001H36.291C35.8837%2033.6%2035.4534%2033.482%2035.0703%2033.3413C34.6684%2033.1937%2034.2326%2032.9888%2033.7891%2032.7495C33.0066%2032.3274%2032.1516%2031.7724%2031.3438%2031.1626C31.2295%2031.1683%2031.1145%2031.1719%2030.999%2031.1733H25.001C22.8735%2031.1733%2020.9179%2030.4362%2019.3672%2029.2036C19.986%2028.7674%2020.5056%2028.2641%2020.9277%2027.7427C22.0762%2028.5704%2023.4819%2029.0581%2025.001%2029.0581H30.9736C31.1723%2029.0557%2031.3694%2029.0447%2031.5645%2029.0259L31.9795%2028.9858L32.3086%2029.2446C33.126%2029.8869%2034.0071%2030.4688%2034.7773%2030.8843C34.9405%2030.9723%2035.0967%2031.0508%2035.2432%2031.1206V27.5503L35.5889%2027.2349C36.1697%2026.7056%2036.6607%2026.0797%2037.04%2025.3833H27.501V23.187H37.8018C37.8632%2022.8258%2037.8983%2022.4553%2037.9033%2022.0776L37.9043%2021.981V20.3384H29.9199V18.1421H37.9043V15.2954H32.0967V13.0991H37.9043V11.7964C37.9042%207.88738%2034.7626%204.71826%2030.8877%204.71826H25.001C24.9537%204.71826%2024.9064%204.72025%2024.8594%204.72119C24.6403%203.99556%2024.338%203.30677%2023.9668%202.66357C24.3063%202.62489%2024.6513%202.60303%2025.001%202.60303H30.8877Z'%20fill='%23FCFCFD'/%3e%3cpath%20d='M15.2422%200C19.2806%200.000117114%2022.6524%202.88007%2023.4502%206.71484C24.6213%2010.6795%2025.9625%2017.7485%2025.9678%2017.7764H21.8545V19.9727H17.9844C17.9844%2021.315%2019.324%2023.1582%2021.0898%2023.1582C21.0898%2024.6226%2019.0483%2028.3936%2014.5967%2028.3936H8.38672C3.75485%2028.3934%200.00013738%2024.6053%200%2019.9326V8.46094C7.60327e-05%203.78818%203.75481%200.000176942%208.38672%200H15.2422ZM17.9033%209.43652C17.0127%209.43652%2016.2903%2010.165%2016.29%2011.0635C16.29%2011.9621%2017.0125%2012.6914%2017.9033%2012.6914C18.7941%2012.6913%2019.5166%2011.9621%2019.5166%2011.0635C19.5164%2010.1651%2018.7939%209.43658%2017.9033%209.43652Z'%20fill='%23FCFCFD'/%3e%3c/svg%3e" alt="logo">
+        <div class="d-flex flex-column gap-3 border-bottom-dashed w-100">
+            <h2 class="fw-bold fs-md-2 fs-3">邁向你真正想過的生活，從這裡開始</h2>
+            <p class="lh-base fs-md-6 fs-7 pb-6">第一次諮詢只要 30 分鐘，可能改變你未來 30 年的生活方式</p>
+        </div>
+        <div class="w-100">
+        <div class="d-flex gap-md-6 gap-4 mb-auto flex-column flex-md-row align-items-start">
+            <p class="fw-medium fs-md-5 fs-6"><span class="material-icons-outlined align-middle pe-2">call</span>0800-123-123</p>
+            <p class="fw-medium fs-md-5 fs-6 flex-md-grow-1"><span class="material-icons-outlined align-middle pe-2">mail</span>Sample@mail.com</p>
+            <a href="contact-us.html" class="btn btn-dark py-3 ps-3 ps-md-5 pe-2 pe-md-3 mt-2 mt-md-0">預約免費職涯探索<span class="material-icons-outlined align-text-top" style="width: 20px; height: 20px;">chevron_right</span></a>
+        </div>
+    </div>
+      
+
+    </div>
+</section>    <footer class="navbar bg-gray border-top py-md-9 py-6">
+    <div class="container">
+        <div class="d-flex flex-md-row flex-column justify-content-md-between align-items-center flex-grow-1">
+            <ul class="d-flex flex-row flex-wrap justify-content-center navbar-nav row-gap-2">
+                <li class="nav-item">
+                    <a class="nav-link py-2 px-md-6 px-4 ms-auto ms-md-0" aria-current="page" href="plan.html">服務方案</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-2 px-md-6 px-4" aria-current="page" href="about.html">關於職旅</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-2 px-md-6 px-4 me-auto me-md-0" aria-current="page" href="contact-us.html">聯絡我們</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-2 px-md-6 px-4 ms-auto ms-md-0" aria-current="page" href="privacy.html">隱私權政策</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link py-2 px-md-6 px-4 me-auto me-md-0" aria-current="page" href="service.html">用戶條款</a>
+                </li>
+            </ul>
+            <p class="text-natural-50 fs-8 mt-2 mt-md-0">Copyright © 2025 職旅 workway. All rights reserved.</p>
+        </div>
+</footer>    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
+
