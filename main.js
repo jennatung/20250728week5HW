@@ -22,7 +22,9 @@ const swiper2 = new Swiper('.swiper2', {
   // Default parameters
   slidesPerView: 1.1,
   spaceBetween: 24,
-  autoplay: true,
+  autoplay: {
+   delay: 2000,
+ },
   loop: true,
   // Responsive breakpoints
   breakpoints: {
@@ -34,4 +36,18 @@ const swiper2 = new Swiper('.swiper2', {
   }
 })
 
+//第七堂主線任務
+AOS.init({
+  duration: 800,
+});
 
+// click-animate
+const elements = document.querySelectorAll('.click-animate');
+elements.forEach((ele, key) => {
+    ele.addEventListener('click', function () {
+        ele.classList.add('animate__animated', 'animate__headShake');
+    });
+    ele.addEventListener('animationend', function () {
+        ele.classList.remove('animate__animated', 'animate__headShake');
+    });
+});

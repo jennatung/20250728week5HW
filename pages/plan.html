@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />    
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
     <title>服務方案 - 職旅｜Workway</title>
   </head>
   <body>
@@ -15,16 +17,16 @@
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-md-8">
-            <h1 class="fw-bold fs-md-1 fs-2 pb-md-9 pb-6">服務方案</h1>
-            <p class="lh-base fs-md-6 fs-7 text-natural-50">我們最全面的服務方案，為您提供從評估、規劃到實踐的完整支持。不再擔心轉型過程中的各種挑戰，我們的專家團隊將全程陪伴，確保您順利實現職業自由。</p>
+            <h1 class="fw-bold fs-md-1 fs-2 pb-md-9 pb-6 animate__animated animate__fadeInUp">服務方案</h1>
+            <p class="lh-base fs-md-6 fs-7 text-natural-50 animate__animated animate__fadeInDown">我們最全面的服務方案，為您提供從評估、規劃到實踐的完整支持。不再擔心轉型過程中的各種挑戰，我們的專家團隊將全程陪伴，確保您順利實現職業自由。</p>
           </div>
         </div>      
       </div>
-      <img src="../assets/images/service/banner-person.svg" alt="服務方案" class="position-absolute d-none d-xl-block" style="bottom: -10px; right: 400px;">
+      <img src="../assets/images/service/banner-person.svg" alt="服務方案" class="position-absolute d-none d-xl-block animate__animated animate__fadeInDown" style="bottom: -10px; right: 400px;">
     </header>
 
     <!-- 職涯轉型全程計畫 -->
-    <section class="container py-md-12 py-9">
+    <section class="container py-md-12 py-9" data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
       <!-- 標題 -->
       <div class="d-flex flex-column justify-content-center align-items-center pb-md-9 pb-6">
         <img src="../assets/images/service/goal.png" alt="職涯轉型全程計畫" class="mb-1">
@@ -35,7 +37,7 @@
       <div class="row flex-column">
         <ul class="col">
           <!-- 卡片1 -->
-          <li class="card mb-md-6 mb-4 border shadow-sm overflow-hidden">
+          <li class="card mb-md-6 mb-4 border shadow-sm overflow-hidden click-animate">
             <input type="radio" id="plan1" name="plan-fullplan" value="plan1" class="hot-input" checked>
             <label for="plan1" class="hot-label">
               <div class="d-flex justify-content-between">
@@ -74,7 +76,7 @@
             </label>
           </li>
           <!-- 卡片2 -->
-          <li class="card mb-md-6 mb-4 border shadow-sm overflow-hidden"> 
+          <li class="card mb-md-6 mb-4 border shadow-sm overflow-hidden click-animate"> 
             <input type="radio" id="plan2" name="plan-fullplan" value="plan2" class="hot-input">
             <label for="plan2" class="hot-label">
               <div class="d-flex justify-content-between">
@@ -111,7 +113,7 @@
             </label>            
           </li>
           <!-- 卡片3 -->
-          <li class="card mb-md-6 mb-4 border shadow-sm overflow-hidden">
+          <li class="card mb-md-6 mb-4 border shadow-sm overflow-hidden click-animate">
             <input type="radio" id="plan3" name="plan-fullplan" value="plan3" class="hot-input">
             <label for="plan3" class="hot-label">
               <div class="d-flex justify-content-between">
@@ -153,7 +155,7 @@
 
     <!-- 基礎諮詢服務 -->
     <section class="bg-natural-95">
-      <div class="container py-md-12 py-9">   
+      <div class="container py-md-12 py-9" data-aos="zoom-out">   
         <!-- 標題 -->
         <div class="d-flex flex-column justify-content-center align-items-center pb-md-9 pb-6">
           <img src="../assets/images/service/conversation.png" alt="基礎諮詢服務" class="mb-1">
@@ -163,7 +165,7 @@
         <!-- 卡片list -->
         <ul class="row flex-column flex-md-row">
           <!-- 卡片1 -->
-          <li class="col-md-4 mb-md-0 mb-4">
+          <li class="col-md-4 mb-md-0 mb-4 click-animate">
             <div class="card border rounded-4 shadow-sm overflow-hidden">
               <input type="radio" id="consult2" name="plan-consult" value="consult2" class="hot-input" checked>
               <label for="consult2" class="hot-label">
@@ -180,7 +182,7 @@
             </div>
           </li>
           <!-- 卡片2 -->
-          <li class="col-md-4 mb-md-0 mb-4">
+          <li class="col-md-4 mb-md-0 mb-4 click-animate">
             <div class="card border rounded-4 shadow-sm overflow-hidden">
               <input type="radio" id="consult1" name="plan-consult" value="consult1" class="hot-input" checked>
               <label for="consult1" class="hot-label">
@@ -197,9 +199,9 @@
             </div>
           </li>
           <!-- 卡片3 -->
-          <li class="col-md-4 mb-md-0 mb-4">
+          <li class="col-md-4 mb-md-0 mb-4 click-animate">
             <div class="card border rounded-4 shadow-sm overflow-hidden">
-              <input type="radio" id="consult3" name="plan-consult" value="consult3" class="hot-input" checked>
+              <input type="radio" id="consult3" name="plan-consult" value="consult3" class="hot-input">
               <label for="consult3" class="hot-label">
                 <div class="d-flex flex-column gap-md-6 gap-4 align-items-center py-6 px-md-6 px-4">
                   <img src="../assets/images/service/server-3.svg" alt="專業定位與品牌建立">
@@ -219,7 +221,7 @@
 
     <!-- 持續支持方案 -->
     <section style="background: linear-gradient(to bottom, #F0F3F5 300px, white 0);">
-      <div class="container py-md-12 py-9">
+      <div class="container py-md-12 py-9" data-aos="zoom-out">
         <!-- 標題 -->
         <div class="d-flex flex-column justify-content-center align-items-center pb-md-9 pb-6">
           <img src="../assets/images/service/love.png" alt="持續支持方案" class="mb-1">
@@ -253,6 +255,7 @@
     <%- include('./layout/footer'); -%>    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>
 

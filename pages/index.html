@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />    
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>職旅｜Workway</title>
   </head>
   <body>
@@ -18,11 +20,11 @@
       <div class="container pt-9 pt-md-12 pb-md-6 pb-5">      
         <div class="row justify-content-center">
           <div class="col-8">
-            <h1 class="fs-2 fs-md-0 fw-bold text-natural-10 text-center mb-6">一起陪伴、探索<br>還有你那些未完成的夢</h1>
+            <h1 class="fs-2 fs-md-0 fw-bold text-natural-10 text-center mb-6 animate__animated animate__fadeInDown">一起陪伴、探索<br>還有你那些未完成的夢</h1>
                       
             <div class="d-flex flex-column text-center align-items-center gap-5 flex-md-row justify-content-md-between text-md-start">
-              <p class="text-natural-50 lh-base fs-7 fs-md-6">自由工作很美，也很難。<br>我們用 1 對 1 陪伴，陪你從第一步開始，直到夢想變成日常</p>
-              <a href="plan.html" type="button" class="btn btn-secondary rounded-1 text-black fw-bold fs-5 fs-md-4 ps-3 ps-md-5 pe-2 pe-md-3">開始你的職旅<span class="material-icons-outlined align-middle" style="width: 28px; height: 28px;">chevron_right</span></a>            
+              <p class="text-natural-50 lh-base fs-7 fs-md-6 animate__animated animate__fadeInLeft">自由工作很美，也很難。<br>我們用 1 對 1 陪伴，陪你從第一步開始，直到夢想變成日常</p>
+              <a href="plan.html" type="button" class="btn btn-secondary rounded-1 text-black fw-bold fs-5 fs-md-4 ps-3 ps-md-5 pe-2 pe-md-3 animate__animated animate__fadeInRight">開始你的職旅<span class="material-icons-outlined align-middle" style="width: 28px; height: 28px;">chevron_right</span></a>            
             </div>
   
           </div>
@@ -31,14 +33,14 @@
       <!-- 滿版圖片 -->
       <div class="container-fluid pt-5 pt-mb-6 pb-9 pb-md-12">
         <div class="row">
-          <div class="col-md-4 d-none d-md-block">
+          <div class="col-md-4 d-none d-md-block animate__animated animate__slideInUp animate__faster">
             <img src="../assets/images/index/hero-1.png" alt="hero-1">
           </div>
-          <div class="col-md-4 flex-column d-none d-md-flex">
+          <div class="col-md-4 flex-column d-none d-md-flex animate__animated animate__slideInUp animate__fast">
             <img src="../assets/images/index/hero-2.png" alt="hero-2">
             <img src="../assets/images/index/hero-3.png" alt="hero-3" class="mt-auto">
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 animate__animated animate__slideInUp">
             <img src="../assets/images/index/hero-4.png" alt="hero-4">
           </div>
         </div>
@@ -49,13 +51,13 @@
     <section style="background: linear-gradient(to top, #F0F3F5 200px, white 0);">
       <div class="container py-9 py-md-12">
         <div class="row">
-          <div class="col-md-4 d-flex flex-column justify-content-center mb-6">
+          <div class="col-md-4 d-flex flex-column justify-content-center mb-6" data-aos="zoom-in">
             <img src="../assets/images/logo-icon.svg" alt="logo" class="logo-img mb-4 mb-md-6">
             <h2 class="fs-2 fs-md-1 fw-bold text-natural-10 pb-4 pb-md-6">他們已經踏上職旅<br>聽聽他們的故事</h2>
             <p class="fs-7 fs-md-6 lh-base fw-normal text-natural-50">每一段職涯轉型都有獨特挑戰，這些曾經與你有相同疑惑的夥伴，現在正過著他們嚮往的生活</p>
           </div>
           <!-- 卡片 -->
-          <div class="col-md-8">
+          <div class="col-md-8" data-aos="fade-left">
             <div class="swiper ps-3">
               <ul class="swiper-wrapper">
                 <li class="swiper-slide">
@@ -110,12 +112,12 @@
     <!-- 選擇職旅 WorkWay -->
     <section class="bg-natural-95">
       <div class="container py-9 py-md-12">
-        <div class="d-flex flex-column justify-content-center  align-items-center mb-md-9 mb-6">
+        <div class="d-flex flex-column justify-content-center  align-items-center mb-md-9 mb-6" data-aos="fade-down">
           <div class="speech-bubble fs-6 fs-md-5 mb-3">為什麼？</div>
           <h2 class="fw-bold fs-md-1 fs-2">選擇職旅 WorkWay</h2>
         </div>
         <ul class="row">
-          <li class="col-md-4 mb-4 mb-md-0">
+          <li class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" >
             <div class="card text-center rounded-3 position-relative">
               <img src="../assets/images/index/adv-1.png" alt="adv-1" class="card-img">
               <div class="work-way-card-hover card-img-overlay p-6">
@@ -126,7 +128,7 @@
               <span class="badge fw-bold fs-md-4 fs-5 bg-natural-95 py-3 span-lowerLeft"><span class="material-icons-outlined align-top text-primary pe-1">ads_click</span>實戰經驗</span>
             </div>
           </li>
-          <li class="col-md-4 mb-4 mb-md-0">
+          <li class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
             <div class="card text-center rounded-3 rounded-3 position-relative">
               <img src="../assets/images/index/adv-2.png" alt="adv-2" class="card-img">
               <div class="work-way-card-hover card-img-overlay p-6">
@@ -137,7 +139,7 @@
               <span class="badge fw-bold fs-md-4 fs-5 bg-natural-95 py-3 span-lowerLeft"><span class="material-icons-outlined align-top text-primary pe-1">ads_click</span>全方位支持</span>
             </div>
           </li>
-          <li class="col-md-4 mb-4 mb-md-0">
+          <li class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="200">
             <div class="card text-center rounded-3 rounded-3 position-relative">
               <img src="../assets/images/index/adv-3.png" alt="adv-3" class="card-img">
               <div class="work-way-card-hover card-img-overlay p-6">
@@ -147,7 +149,7 @@
               </div>              
               <span class="badge fw-bold fs-md-4 fs-5 bg-natural-95 py-3 span-lowerLeft"><span class="material-icons-outlined align-top text-primary pe-1">ads_click</span>社群力量</span>
               <!-- 燈泡比讚小圖案 -->
-              <img src="../assets/images/index/adv-vectors.svg" alt="選擇職旅WorkWay" class="decroSVG-OverTopRight">
+              <img src="../assets/images/index/adv-vectors.svg" alt="選擇職旅WorkWay" class="decroSVG-OverTopRight" data-aos="fade-left" data-aos-delay="100">
             </div>
           </li>
         </ul>
@@ -162,10 +164,10 @@
     <section style="background-image: url(../assets/images/index/gradient-ball.png);" class="section-background-lowerLeft">
       <div class="container py-9 py-md-12">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6" data-aos="fade-down">
             <img src="../assets/images/index/team.png" alt="遇見你的職涯夥伴" class="rounded-1 mb-6 mb-md-0">
           </div>
-          <div class="col-md-6 d-flex flex-column justify-content-center justify-content-md-start align-items-md-start align-items-center gap-4 gap-md-6">
+          <div class="col-md-6 d-flex flex-column justify-content-center justify-content-md-start align-items-md-start align-items-center gap-4 gap-md-6" data-aos="fade-up">
             <h2 class="fw-bold fs-2 fs-md-1 text-black">遇見你的職涯夥伴</h2>
             <p class="fs-7 fs-md-6 text-natural-50">每位顧問都有獨特專長，更重要的是：</p>
             <h3 class="fw-bold fs-md-4 fs-5 bg-natural-95 py-2 text-primary">“ 他們都曾面對你正在經歷的挑戰 ”</h3>
@@ -180,32 +182,32 @@
     <!-- 服務流程 -->
     <section class="bg-primary">
       <div class="container py-9 py-md-12 text-center">
-        <h2 class="fw-bold text-white fw-bold fs-md-1 fs-2 mb-md-6 mb-4">服務流程</h2>
-        <p class="lh-base text-white fs-md-6 fs-7 mb-md-9 mb-6">簡單四步，踏上你的職旅</p>
+        <h2 class="fw-bold text-white fw-bold fs-md-1 fs-2 mb-md-6 mb-4" data-aos="fade-down">服務流程</h2>
+        <p class="lh-base text-white fs-md-6 fs-7 mb-md-9 mb-6" data-aos="fade-down">簡單四步，踏上你的職旅</p>
         
         <ol class="row flex-nowrap overflow-auto">
-          <li class="col-md-3 card-overflow-width">
+          <li class="col-md-3 card-overflow-width" data-aos="zoom-in">
             <div class="card d-flex justify-content-center align-items-center pt-10 pb-9 px-4 px-md-6 gap-4 gap-md-6">
               <img src="../assets/images/index/serve-1.svg" alt="免費註冊會員" class="card-img-top" style="width: 160px; height: 160px;">
               <h3 class="fw-bold text-black fs-md-6 fs-5">免費註冊會員</h3>
               <p class="text-natural-50 lh-base fs-8">透過網站左上角按鈕，立即註冊免費會員，與我們開始建立連結。</p>
             </div>
           </li>
-          <li class="col-md-3 card-overflow-width">
+          <li class="col-md-3 card-overflow-width" data-aos="zoom-in" data-aos-delay="100">
             <div class="card d-flex justify-content-center align-items-center pt-10 pb-9 px-4 px-md-6 gap-4 gap-md-6">
               <img src="../assets/images/index/serve-2.svg" alt="填寫職旅計劃" class="card-img-top" style="width: 160px; height: 160px;">
               <h3 class="fw-bold text-black fs-md-6 fs-5">填寫職旅計劃</h3>
               <p class="text-natural-50 lh-base fs-8">了解你的技能、熱情與市場需求的交會點，找出屬於你的獨特定位。</p>
             </div>
           </li>
-          <li class="col-md-3 card-overflow-width">
+          <li class="col-md-3 card-overflow-width" data-aos="zoom-in" data-aos-delay="200">
             <div class="card d-flex justify-content-center align-items-center pt-10 pb-9 px-4 px-md-6 gap-4 gap-md-6">
               <img src="../assets/images/index/serve-3.svg" alt="初次諮詢" class="card-img-top" style="width: 160px; height: 160px;">
               <h3 class="fw-bold text-black fs-md-6 fs-5">初次諮詢</h3>
               <p class="text-natural-50 lh-base fs-8">依據你的目標與現況，給予最直接的建議，建立清晰的轉型思路。</p>
             </div>
           </li>
-          <li class="col-md-3 card-overflow-width">
+          <li class="col-md-3 card-overflow-width" data-aos="zoom-in" data-aos-delay="300">
             <div class="card d-flex justify-content-center align-items-center pt-10 pb-9 px-4 px-md-6 gap-4 gap-md-6">
               <img src="../assets/images/index/serve-4.svg" alt="實戰指導" class="card-img-top" style="width: 160px; height: 160px;">
               <h3 class="fw-bold text-black fs-md-6 fs-5">實戰指導</h3>
@@ -222,13 +224,13 @@
     <section style="background-image: url(../assets/images/index/bg-grid.png);">
       <div class="container py-9 py-md-12 text-center">
         <!-- 標題 -->
-        <div class="d-flex flex-column justify-content-center align-items-center mb-md-9 mb-6">
+        <div class="d-flex flex-column justify-content-center align-items-center mb-md-9 mb-6" data-aos="fade-down">
           <div class="speech-bubble mb-4 fs-md-5 fs-6">\ Q&A /</div>
           <h2 class="text-black fw-bold fs-md-1 fs-2">你可能有些困惑...</h2>
         </div>
-        <!-- 右側 -->
+        <!-- main -->
         <div class="row justify-content-between">
-          <div class="col-md-4 d-none d-md-block">
+          <div class="col-md-4 d-none d-md-block" data-aos="fade-right">
             <img src="../assets/images/index/qa.svg" alt="QA">
           </div>
 
@@ -236,7 +238,7 @@
           <div class="col-md-7">
             <div class="accordion" id="WorkWayQA">
               <!-- Q1 -->
-              <div class="accordion-item">
+              <div class="accordion-item" data-aos="fade-up">
                 <h2 class="accordion-header">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#QA-1" aria-expanded="true" aria-controls="QA-1">
                     <span class="me-2">Q.</span>
@@ -253,7 +255,7 @@
                 </div>
               </div>
               <!-- Q2 -->
-              <div class="accordion-item">
+              <div class="accordion-item" data-aos="fade-up">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#QA-2" aria-expanded="false" aria-controls="QA-2">
                     <span class="me-2">Q.</span>                     
@@ -270,7 +272,7 @@
                 </div>
               </div>
               <!-- Q3 -->
-              <div class="accordion-item">
+              <div class="accordion-item" data-aos="fade-up">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#QA-3" aria-expanded="false" aria-controls="QA-3">
                     <span class="me-2">Q.</span>  
@@ -287,7 +289,7 @@
                 </div>
               </div>
               <!-- Q4 -->
-              <div class="accordion-item">
+              <div class="accordion-item" data-aos="fade-up">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#QA-4" aria-expanded="false" aria-controls="QA-4">
                     <span class="me-2">Q.</span>  
@@ -304,7 +306,7 @@
                 </div>
               </div>
               <!-- Q5 -->
-              <div class="accordion-item">
+              <div class="accordion-item" data-aos="fade-up">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#QA-5" aria-expanded="false" aria-controls="QA-5">
                     <span class="me-2">Q.</span>  
@@ -330,6 +332,7 @@
     <%- include('./layout/contant-block'); -%>
     <%- include('./layout/footer'); -%>    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
